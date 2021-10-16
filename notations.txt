@@ -1,0 +1,11 @@
+bigoh - worst case, upper bound- at most
+f(n) = O g(n)
+where f(n) <= C.g(n)
+c>0
+n-inputs
+n>=k
+k>=0
+
+omega- best case, lower bound - atlease
+
+theta - average, exact
