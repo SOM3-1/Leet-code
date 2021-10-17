@@ -20,13 +20,14 @@ Then 4 is the first bad version.
 
 
 ## Solution
+```
 /**
  * Definition for isBadVersion()
  * 
  * @param {integer} version number
  * @return {boolean} whether the version is bad
  * isBadVersion = function(version) {
- *     ...
+ *  
  * };
  */
 
@@ -49,3 +50,4 @@ var solution = function(isBadVersion) {
         return low;
     };
 };
+```
