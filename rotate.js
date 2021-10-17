@@ -8,3 +8,12 @@ const rotate = (nums, k) => {
     nums.unshift(...nums.splice(nums.length-k,k))
 };
 
+// My working solution
+const rotate = (nums, k) => {
+    if(k>nums.length)
+        {
+            k = k%(nums.length);
+        }
+    nums.unshift(...nums.splice(nums.length-k,k))
+};
+
