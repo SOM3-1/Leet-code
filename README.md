@@ -19,7 +19,6 @@ Output: "doG gniD"
 var reverseWords = function(s) {
     return s
     .split(' ')
-    .filter((e) => e)
     .map((e) => e.split('').reverse().join(''))
     .join(' ');
     
