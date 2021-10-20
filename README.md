@@ -20,7 +20,21 @@ Example 3:
 Input: head = [1,2], n = 1
 Output: [1]
 
-
+```
+const removeNthFromEnd = (head, n) => {  
+  let tortoise = head, hare = head;
+  
+  while (n) hare = hare.next, n--;
+    
+  if (!hare) return head.next;
+  
+  while (hare.next) hare = hare.next, tortoise = tortoise.next;       
+         
+  tortoise.next = tortoise.next.next
+  
+  return head
+}
+```
 ```
 /**
  * @param {ListNode} head
