@@ -44,7 +44,7 @@ var solution = function(isBadVersion) {
         let low=1,high = n;
         while(low<high)
             {
-                let mid = low +(high-low)/2;
+                let mid = low +let mid = low + Math.floor((high-low)/2);
                 isBadVersion(mid)?high=mid:low=mid+1;
             }
         return low;
