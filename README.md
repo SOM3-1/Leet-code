@@ -1,33 +1,34 @@
-121. Best Time to Buy and Sell Stock
-Easy
+167. Two Sum II - Input Array Is Sorted
+Medium
 
-You are given an array prices where prices[i] is the price of a given stock on the ith day.
+Given a 1-indexed array of integers numbers that is already sorted in non-decreasing order, find two numbers such that they add up to a specific target number. Let these two numbers be numbers[index1] and numbers[index2] where 1 <= index1 < index2 <= numbers.length.
 
-You want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future to sell that stock.
+Return the indices of the two numbers, index1 and index2, added by one as an integer array [index1, index2] of length 2.
 
-Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
+The tests are generated such that there is exactly one solution. You may not use the same element twice.
+
+Your solution must use only constant extra space.
 
  
 
 Example 1:
 
-Input: prices = [7,1,5,3,6,4]
-Output: 5
-Explanation: Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5.
-Note that buying on day 2 and selling on day 1 is not allowed because you must buy before you sell.
+Input: numbers = [2,7,11,15], target = 9
+Output: [1,2]
+Explanation: The sum of 2 and 7 is 9. Therefore, index1 = 1, index2 = 2. We return [1, 2].
 
 Example 2:
 
-Input: prices = [7,6,4,3,1]
-Output: 0
-Explanation: In this case, no transactions are done and the max profit = 0.
+Input: numbers = [2,3,4], target = 6
+Output: [1,3]
+Explanation: The sum of 2 and 4 is 6. Therefore index1 = 1, index2 = 3. We return [1, 3].
 
- 
+Example 3:
 
-Constraints:
+Input: numbers = [-1,0], target = -1
+Output: [1,2]
+Explanation: The sum of -1 and 0 is -1. Therefore index1 = 1, index2 = 2. We return [1, 2].
 
-    1 <= prices.length <= 105
-    0 <= prices[i] <= 104
 
 
 
