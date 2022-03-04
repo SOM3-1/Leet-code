@@ -31,6 +31,8 @@ Constraints:
 
 
 
+
+```javascript
 const maxProfit = (prices)  =>{
     let profit = 0,
     min = prices[0];
@@ -41,3 +43,4 @@ const maxProfit = (prices)  =>{
   return profit;
     
 };
+```
